@@ -29,7 +29,7 @@ chr3_deletions=0
 chr3_duplications=0
 while read line; do
 	str=$(echo $line | awk '{print $2}' | cut -d ":" -f 1)
-	if [ $str == "chr4" ]; then
+	if [ $str == "chr3" ]; then
 		type="$(echo $line | awk '{print $1}')"
 		if [ $type == "deletion" ]
 		then
