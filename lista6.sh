@@ -46,7 +46,7 @@ printf "CHR3_DELETIONS: $chr3_deletions\nCHR3_DUPLICATIONS: $chr3_duplications\n
 echo "--------PERCENT OF DUPLICATIONS--------"
 
 totals=$((total_duplications + total_deletions))
-percent=$(echo "scale=2; $total_duplications/$totals" | bc) 
+percent=$(echo "scale=2; $total_duplications/$totals*100" | bc) 
 echo "$percent"
 
 # ------------------------------------------------------------ e -----------------------------------------
