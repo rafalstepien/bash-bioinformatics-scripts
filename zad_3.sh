@@ -12,7 +12,7 @@ while read file_1; do
 done <$1
 
  
-while read file_1; do
+#while read file_1; do
 #	while read file_2; do
 #		line_1=$(echo $file_1 | awk '{print $1, $2, $3}')
 #		line_2=$(echo $file_2 | awk '{print $1, $2, $3}')
